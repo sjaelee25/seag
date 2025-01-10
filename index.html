@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>Semantic Exploration with Adaptive Gating</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,57 +52,19 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Semantic Exploration with Adaptive Gating for Efficient Problem Solving with Language Models</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
+              <span class="author-block">Sungjae Lee<sup>*</sup>,</span>
+              <span class="author-block">Hyejin Park<sup>*</sup>,</span>
+              <span class="author-block">Jaechang Kim</sup>,</span>
+              <span class="author-block">Jungseul Ok</span>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Pohang University of Science and Technology (POSTECH)</span>
+              <span class="eql-cntrb"><small><br><sup>*</sup> Equal Contribuion</small></span>
+            </div>
+            <div class="column has-text-centered">
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
@@ -122,33 +84,47 @@
   </div>
 </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
+<section class="hero teaser" style="margin-bottom: 2em;">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
+      <div class="hero-body has-text-centered">
+
+          <!-- 제목 및 서브타이틀 정렬 및 강조 (글자색 검정, 크기 조정) -->
+          <h2 class="title" style="color: black; font-size: 1.5rem; margin-bottom: 1em;">
+            Semantic Exploration with Adaptive Gating (SEAG)
+          </h2>
+          
+          <!-- 이미지 중앙 정렬 및 캡션 추가 -->
+          <figure class="image is-inline-block" style="margin-bottom: 1em;">
+              <img src="./static/images/seag.png" style="width: 60em; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+          </figure>
+          
+          <h5 class="subtitle is-6" style="margin-bottom: 1em;">
+              SEAG enhances the efficiency and effectiveness of language model reasoning by the following mechanisms:
+          </h5>
+          
+          <!-- 불렛 포인트 시각적 개선 -->
+          <div class="content has-text-left" style="max-width: 50em; margin: 0 auto;">
+              <ul>
+                  <li><strong>Adaptive Gating</strong>: Dynamically determines <strong>when to initiate</strong> tree search based on <em>uncertainty estimation</em>.</li>
+                  <li><strong>Semantic Exploration</strong>: Expands and explores reasoning trees more efficiently by leveraging <em>linguistic semantics</em>, enhancing <strong>how to perform</strong> tree search.</li>
+                  <li><strong>Early Stopping</strong>: Considers <em>semantic confidence</em> to determine <strong>when to terminate</strong> the tree search early.</li>
+              </ul>
+          </div>
+      </div>
   </div>
 </section>
-<!-- End teaser video -->
+
+
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-4">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Recent advancements in large language models (LLMs) have shown remarkable potential in various complex tasks requiring multi-step reasoning methods like tree search to explore diverse reasoning paths. However, existing methods often suffer from computational inefficiency and redundancy. First, they overlook the diversity of task difficulties, leading to unnecessarily extensive searches even for easy tasks. Second, they neglect the semantics of reasoning paths, resulting in redundant exploration of semantically identical paths. To address these limitations, we propose Semantic Exploration with Adaptive Gating (SEAG), a computationally efficient method. SEAG employs an adaptive gating mechanism that dynamically decides whether to conduct a tree search, based on the confidence level of answers from a preceding simple reasoning method. Furthermore, its tree-based exploration consolidates semantically identical reasoning steps, reducing redundant explorations while maintaining or even improving accuracy. Our extensive experiments demonstrate that SEAG significantly improves accuracy by 4.3% on average while requiring only 31% of computational costs compared to existing tree search-based methods on complex reasoning benchmarks including GSM8K and ARC with diverse language models such as Llama2, Llama3, and Mistral.
           </p>
         </div>
       </div>
@@ -158,130 +134,115 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
+<!-- Semantic Exploration Section -->
+<section class="hero teaser" style="margin-top: 3em;">
+  <div class="container is-max-desktop">
+      <div class="hero-body" style="text-align: left;">
 
+          <h2 class="title" style="color: black; font-size: 1.5rem; margin-bottom: 1em; text-align: center;">
+            Semantic Exploration
+          </h2>
+          <!-- 이미지와 캡션 (캡션만 가운데 정렬) -->
+          <figure class="image" style="margin-bottom: 1em; text-align: center;">
+              <img src="./static/images/se.png" style="width: 60em; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+              <figcaption class="subtitle is-6" style="margin-top: 0.5em; text-align: center;">Illustration of tree search-based reasoning methods (ToT [1] and RAP [2]) and semantic exploration (ours).</figcaption>
+          </figure>
 
+          <!-- 설명 텍스트 -->
+          <h5 class="subtitle is-6" style="line-height: 1.4; margin-bottom: 0.8em;">
+              To improve tree search-based reasoning, we introduce <strong>semantic exploration</strong>, which consists of two main components:
+          </h5>
 
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <!-- 불렛 포인트 개선 및 강조 -->
+          <div class="content" style="line-height: 1.4; margin-bottom: 1em;">
+              <ul style="list-style-type: disc; padding-left: 1.2em;">
+                  <li><strong>Semantic Clustering:</strong> Prevents redundant expansion and exploration of semantically duplicate nodes by leveraging semantic equivalence.</li>
+                  <li><strong>Semantics-aware Selection:</strong> Prioritizes the exploration of nodes with higher semantic consistency, enhancing search efficiency.</li>
+              </ul>
           </div>
-        </div>
+
+          <!-- 추가 설명 문장 -->
+          <h5 class="subtitle is-6" style="line-height: 1.4; margin-bottom: 1em;">
+            Compared to existing tree search-based methods, our approach reduces redundant visits to semantically equivalent nodes and limits unnecessary subtree expansions, while encouraging more frequent exploration of semantically consistent nodes.
+          </h5>
       </div>
-    </div>
   </div>
 </section>
-<!-- End youtube video -->
+  <!-- End -->
 
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
+<!-- Main Results Section -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+      <div class="hero-body" style="margin-top: 2em;">
+          <h2 class="title is-4 has-text-centered">Main Results</h2>
+          <div class="hero-body-center" style="margin-bottom: 2em;text-align: center;">
+              <img src="./static/images/main-results.png" style="width: 50em; margin-bottom: -1em; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+              <p style="font-size: 0.9em; margin-top: 0.5em; color: #555; text-align: center;">
+                  Scatter plots showcasing accuracy and the number of LLM inferences for GSM8K and ARC datasets.
+              </p>
+          </div>
+          <h5 class="subtitle is-6" style="text-align: left;">
+              SE significantly outperforms tree search-based methods such as RAP and ToT, achieving both higher accuracy and reduced inference costs. 
+              With the addition of AG, SEAG further improves accuracy by 4.3% while requiring only 31% as many inferences as RAP, which is our closest baseline. 
+              <br>
+              ✔️ SEAG achieves superior reasoning performance with enhanced computational efficiency.
+          </h5>
       </div>
-    </div>
   </div>
 </section>
-<!-- End video carousel -->
 
+<!-- Analysis Section -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+      <div class="hero-body" style="margin-top: 2em;">
+          <!-- Adaptive Gating -->
+          <h2 class="title is-4 has-text-centered" style="margin-top: 2em;">Analysis: Necessity of Adaptive Gating</h2>
+          <div class="hero-body-center" style="text-align: center; margin-bottom: 1em;">
+              <img src="./static/images/ag.png" style="width: 50em; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+              <p style="font-size: 0.9em; margin-top: 0.5em; color: #555;">Accuracy comparison across different entropy ranges for GSM8K and ARC datasets.</p>
+          </div>
+          <p style="line-height: 1.4; text-align: justify; font-weight: normal;">
+            CoT-SC [3] achieves high accuracy on low-entropy problems. In contrast, RAP and SE, which incorporate tree search, exhibit superior accuracy on high-entropy problems.
+            <br>
+            ✔️ Adaptive gating leveraging CoT-SC can enhance both efficiency and accuracy.
+          </p>
 
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+          <!-- Semantic Clustering -->
+          <h2 class="title is-4 has-text-centered" style="margin-top: 3em;">Analysis: Efficiency Improvement by Semantic Exploration</h2>
+          <div class="hero-body-center" style="text-align: center; margin-bottom: 1em;">
+              <img src="./static/images/semantic-clustering.png" style="width: 35em; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+              <p style="font-size: 0.9em; margin-top: 0.5em; color: #555;">Reduction in search space due to semantic clustering across multiple depths.</p>
+          </div>
+          <p style="line-height: 1.4; text-align: justify; font-weight: normal;">
+            Semantic clustering eliminates approximately 20–60% of semantically redundant paths, significantly reducing the search space across various depths and datasets.
+            <br>
+            ✔️ SE effectively prevents the repeated expansion and exploration of semantically redundant paths by leveraging semantic equivalence.
+          </p>
       </div>
-    </div>
-  </section>
-<!--End paper poster -->
+      
+      <!-- 참고 문헌 -->
+      <div class="content" style="font-size: 0.9rem; line-height: 1.3; margin-top: 3em; padding-top: 1em; border-top: 1px solid #ddd;">
+          <h4 class="title is-6">References</h4>
+          <p>[1] Yao, Shunyu, et al. "Tree of thoughts: Deliberate problem solving with large language models." <em>NeurIPS'23.</em></p>
+          <p>[2] Hao, Shibo, et al. "Reasoning with language model is planning with world model." <em>EMNLP'23.</em></p>
+          <p>[3] Wang, Xuezhi, et al. "Self-Consistency Improves Chain of Thought Reasoning in Language Models." <em>ICLR'23.</em></p>
+      </div>
+  </div>
+</section>
 
-
-<!--BibTex citation -->
+  <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@article{lee2025seag,
+        title={Semantic Exploration with Adaptive Gating for Efficient Problem Solving with Language Models},
+        author={Lee, Sungjae and Park, Hyejin and Kim, Jaechang and Ok, Jungseul},
+        journal={arXiv preprint arXiv:T.B.U},
+        year={2025}
+      }</code></pre>
     </div>
-</section>
-<!--End BibTex citation -->
+  </section>
+  <!--End BibTex citation -->
 
 
   <footer class="footer">
